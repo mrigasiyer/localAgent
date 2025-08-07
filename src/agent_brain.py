@@ -33,6 +33,7 @@ class Agent:
             "model" : self.model,
             "prompt" : full_prompt,
             "stream" : False
+            
         })
 
         if response.status_code != 200:
