@@ -32,6 +32,7 @@ class CalculatorTool(Tool):
     def __init__(self):
         super().__init__("calc", "Do basic math. Input should be math expressions like 2+2 or 3 * (4 + 5)")
 
+    #this is an other test
     def use(self, command):
         try:
             allowed_names = {}

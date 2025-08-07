@@ -33,11 +33,12 @@ class Agent:
             "model" : self.model,
             "prompt" : full_prompt,
             "stream" : False
-            
+
         })
 
         if response.status_code != 200:
             return "[LLM ERROR]"
+        
         
         output = response.json()["response"]
         print(f"[LLM OUTPUT]\n{output}")
