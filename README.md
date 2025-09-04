@@ -6,7 +6,7 @@ This project is the foundation for a larger open-source platform for LLM prompt 
 
 ---
 
-## ✅ Features (So Far)
+## Current Features
 
 - **Multi-step agent reasoning loop** — rethinks after every tool use
 - **Modular Tool Interface** — easy to add tools like shell commands, calculator, etc.
@@ -19,27 +19,36 @@ This project is the foundation for a larger open-source platform for LLM prompt 
 
 ## Current Stack
 
+| Area            | Technology                   |
+| --------------- | ---------------------------- |
+| LLM Runtime     | Ollama + Mistral             |
+| Agent Logic     | Python                       |
+| Tools Framework | Custom Tool class            |
+| Math Sandbox    | Python `eval()` w/ whitelist |
+| Shell Access    | subprocess.run               |
 
+---
 
 ## Example Usage
 
 ```bash
 $ python agent_brain.py
 
-Enter Prompt: what is 52 * 12  
+Enter Prompt: what is 52 * 12
 [LLM OUTPUT]
-TOOL: calc  
+TOOL: calc
 INPUT: 52 * 12
 
 Jarvis: Result: 624
 
 ---
 
-Enter Prompt: create folder test123 and list it  
+Enter Prompt: create folder test123 and list it
 [LLM OUTPUT]
-TOOL: shell  
+TOOL: shell
 INPUT: mkdir test123 && ls test123
 
-Jarvis: a.txt  
-b.txt  
+Jarvis: a.txt
+b.txt
 c.txt ...
+```
