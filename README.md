@@ -1,6 +1,6 @@
 # LocalAgent – Autonomous LLM Tool Runtime
 
-**LocalAgent** is a Python-based autonomous agent runtime that runs on your local machine, integrates with local LLMs via [Ollama](https://ollama.com/), and intelligently decides when to use tools like a shell or calculator to answer user prompts — inspired by agentic frameworks like AutoGPT, OpenDevin, and Devika.
+**LocalAgent** is a Python-based autonomous agent runtime that runs on your local machine, integrates with local LLMs via [Ollama](https://ollama.com/), and intelligently decides when to use tools to answer user prompts — inspired by agentic frameworks like AutoGPT, OpenDevin, and Devika.
 
 This project is the foundation for a larger open-source platform for LLM prompt evaluation, runtime orchestration, and agentic behavior testing.
 
